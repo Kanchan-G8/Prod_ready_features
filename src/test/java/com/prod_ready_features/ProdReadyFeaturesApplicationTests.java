@@ -21,7 +21,9 @@ class ProdReadyFeaturesApplicationTests {
 	@Autowired
 	private EmployeeClient employeeClient;
 
-	@Test
+
+
+    @Test
 	@Order(3)
 	void getAllEmployees() {
 		List<EmployeeDTO> employeeDTOList = employeeClient.getAllEmployees();
@@ -31,19 +33,19 @@ class ProdReadyFeaturesApplicationTests {
 	@Test
 	@Order(2)
 	void getEmployeeById(){
-		EmployeeDTO employeeDTO = employeeClient.getEmployeeById(10L);
+		EmployeeDTO employeeDTO = employeeClient.getEmployeeById(2704L);
 		System.out.println(employeeDTO);
 	}
-//
-//	//@Test
-//	@Order(1)
-//	void createNewEmployeeTest(){
-//		EmployeeDTO employeeDTO = new EmployeeDTO(null, "kanchan",
-//				"kanchan@gmail.com",20,"USER",5000.0,
-//				LocalDate.of(2020,12,1),true);
-//				EmployeeDTO savedEmployeeDTO = employeeClient.createNewEmployee(employeeDTO);
-//		System.out.println(savedEmployeeDTO);
 
-//	}
+	@Test
+	@Order(1)
+	void createNewEmployeeTest(){
+		EmployeeDTO employeeDTO = new EmployeeDTO(null, "kanchan",
+				"kanchan@gmail.com",20,"USER",5000.0,
+				LocalDate.of(2020,12,1),true);
+				EmployeeDTO savedEmployeeDTO = employeeClient.createNewEmployee(employeeDTO);
+		System.out.println(savedEmployeeDTO);
+
+	}
 
 }

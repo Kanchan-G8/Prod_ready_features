@@ -1,0 +1,6 @@
+2025-03-30T00:01:50.995+05:30  INFO 19288 --- [prod-ready-features] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (1 addition, 1 deletion, 1 modification)
+2025-03-30T00:01:51.652+05:30  INFO 19288 --- [prod-ready-features] [Thread-43] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-30T00:01:51.735+05:30  INFO 19288 --- [prod-ready-features] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-30T00:01:51.801+05:30  INFO 19288 --- [prod-ready-features] [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T00:01:51.876+05:30  INFO 19288 --- [prod-ready-features] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2025-03-30T00:01:51.935+05:30  INFO 19288 --- [prod-ready-features] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
